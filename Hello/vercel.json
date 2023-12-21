@@ -1,0 +1,14 @@
+{
+    "builds": [
+        {
+            "src": "Hello/wsgi.py",
+            "use": "@vecel/python"
+        }
+    ],
+    "routes" : [
+        {
+            "src": "/(.*)",
+            "dest": "Hello/wsgi.py"
+        }
+    ]
+}
