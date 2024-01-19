@@ -1,281 +1,196 @@
-<html>
-  <head>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- title -->
     <title>Krisha's Blog | LOGIN</title>
+
+    <!-- custom css link -->
+    {% comment %} <link rel="stylesheet" href="static\style.css"> {% endcomment %}
+
+    <!-- favicon -->
     <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/600px-Instagram_icon.png" type="image/x-icon">
 
-
-      <style>
-    /* Your CSS here */
-* {
-  margin: 0;
-  padding: 0;
-  font-family: "-apple-system", BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-}
-
-.container {
-  width: 100%;
-}
-
-.content-container {
-  box-sizing: border-box;
-  padding: 10px;
-  width: 100%;
-}
-
-.instagram-logo {
-  display: block;
-  margin: auto;
-  width: 80%;
-}
-
-input[type="text"], input[type="password"] {
-  background-color: rgb(250, 250, 250);
-  border: 1px solid rgb(219, 219, 219);
-  border-radius: 3px;
-  box-sizing: border-box;
-  display: block;
-  font-family: "-apple-system", BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  height: 38px;
-  margin: 5px auto;
-  padding-left: 7px;
-  width: 270px;
-}
-
-input[type="submit"] {
-  background: rgb(0, 149, 246);
-  border: none;
-  border-radius: 8px;
-  box-sizing: border-box;
-  color: white;
-  display: block;
-  height: 32px;
-  margin: 15px auto;
-  width: 270px;
-}
-
-a {
-  text-decoration: none;
-}
-
-.line-break {
-  align-items: center;
-  box-sizing: border-box;
-  display: flex;
-  height: 15px;
-  justify-content: space-between;
-  margin: auto;
-  width: 270px;
-}
-
-.line {
-  background: rgb(219, 219, 219);
-  height: 1px;
-  width: 40%;
-}
-
-.or, footer a, footer p, select{
-   color: #737373;
-}
-
-.or {
-  text-transform: uppercase;
-}
-
-.facebook-login-container, .forgot-password, .sign-up-container {
-  margin: 30px;
-  text-align: center;
-}
-
-.facebook-login {
-  color: #385185;
-  font-weight: 600;
-}
-
-.facebook-icon {
-  margin: -3px 5px;
-  width: 16px;
-}
-
-.forgot-password {
-  color: #00376B;
-  font-size: 12px;
-}
-
-.sign-up-container {
-  margin: 50px;
-}
-
-
-.get-the-app {
-  margin: 50px;
-  text-align: center;
-}
-
-.get-the-app-image-container{
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
-  width: 100%;
-}
-
-.get-the-app-image{
-  height: 40px;
-  margin: 5px;
-  width: 135px;
-}
-
-footer ul{
-  display: flex;
-  flex-wrap: wrap;
-  font-size: 12px;
-  list-style-type: none;
-  justify-content: center;  
-}
-
-footer li {
-  margin: 10px;
-}
-
-select {
-  border: none;
-  margin-right: 15px;
-}
-
-.language-copyright-container {
-  display: flex;
-  justify-content: center;
-  margin: 20px 0 40px;;
-}
-
-@media screen and (min-width: 451px) {
-  .content-container {
-    margin-top: 30px;
-  }
-  
-  .log-in-container, .sign-up-container{
-    border: solid rgb(219, 219, 219) 1px; 
-    box-sizing: border-box;
-    margin: 10px auto;
-    width: 350px;
-  }
-  
-  .sign-up-container {
-    align-items: center;
-    display: flex;
-    height: 63px;
-    justify-content: center;
-  }
-}
-
-
-@media screen and (min-width: 876px) {
-  .container {
-    align-items: center;
-    display: flex;
-    flex-direction: row-reverse;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 32px auto;
-    width: 870px;
-  }
-  
-  .content-container {
-    width: 50%;
-  }
-  
-  .image-container {
-    background: url("https://assets.codepen.io/6060109/IG-phone.jpeg");
-    background-size: contain;
-    height: 580px;
-    width: 380px;
-  }
-  h3 {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 14px;
-    color: #385185;
-    cursor: pointer;
-}
-
-}
-</style>
-  </head>
-  <script src="https://cdn.tailwindcss.com"></script>
-<link href="https://fonts.cdnfonts.com/css/instagram-sans-2" rel="stylesheet">    
-
-
-<header class="text-gray-600 body-font">
-  <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-    
-      <span class="ml-3 text-xl">BLOG | LOGIN</span>
-    </a>
-    <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
-      <a class="mr-5 hover:text-gray-900">ABOUT</a>
-      <a class="mr-5 hover:text-gray-900">COLLAB</a>
-      <a class="mr-5 hover:text-gray-900">CONTACT</a>
-      <p style="text-align: right"> LOGIN TO VIEW MY BLOG</p>
-    </nav>
-  </div>
-</header>           
-<!-- Your HTML Here -->
-<div class="container">
-  <div class="content-container">
-    <div class="log-in-container">
-    <img class="instagram-logo" src="https://assets.codepen.io/6060109/ig-logo.png" alt="Instagram logo" />
-      <form class="form" method="post" action="/contact">
-        {% csrf_token %}
-        <input type="text" placeholder="Phone number, username, or email" id="name" name="name">
-        <input type="password" placeholder="Password" id="desc" name="desc">
-        <input type="submit" value="Log in">
-        <div class="line-break">
-          <div class="line"></div>
-          <div class="or">or</div>
-          <div class="line"></div>
-        </div>
+    <!-- boxicons cdn link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    {% comment %} <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"> {% endcomment %}
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
         
-        <div class="forgot-password">
-          <a href="#">Forgot password?</a>
+        body {
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+            align-items: center;
+            gap: 40px;
+        }
+        
+        .insta__form {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+        
+        .login__form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+        }
+        
+        .form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        
+        input {
+            max-width: 400px;
+            width: 300px;
+            background-color: #ECF3FF;
+            border: 0;
+            padding: 10px 20px;
+            border: 1px solid #eee;
+            border-radius: 50px;
+            outline: none;
+            color: #666;
+        }
+        
+        button {
+            max-width: 400px;
+            width: 300px;
+            background-color: #3578E5;
+            border: 0;
+            padding: 10px 20px;
+            border: 1px solid #eee;
+            border-radius: 50px;
+            outline: none;
+            color: #fff;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        
+        .or {
+            font-size: 14px;
+            font-weight: 600;
+            color: #666;
+            text-align: center;
+            margin-top: 20px;
+            position: relative;
+        }
+        
+        .or::before {
+            content: '';
+            position: absolute;
+            background-color: #666;
+            height: 1px;
+            bottom: 7px;
+            left: 20px;
+            width: 100px;
+        }
+        
+        .or::after {
+            content: '';
+            position: absolute;
+            background-color: #666;
+            height: 1px;
+            bottom: 7px;
+            right: 20px;
+            width: 100px;
+        }
+        
+        h3 {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 14px;
+            color: #385185;
+            cursor: pointer;
+        }
+        
+        h3 i {
+            font-size: 22px;
+        }
+        
+        .forget{
+            margin-top: -20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 12px;
+            color: #385185;
+            cursor: pointer;
+        }
+        
+        
+        
+        
+        @media (max-width:764px) {
+            .image__login{
+                display: none;
+            }
+        }
+
+        
+    </style>
+</head>
+
+
+<body>
+    
+    
+    
+
+    <div class="image__login">
+        <img src="https://i.ibb.co/zS7Kfzh/instagramimg.png" alt="">
+    </div>
+
+    <div class="insta__form">
+        <h1>
+            LOGIN TO VIEW MY BLOG
+        </h1>
+        <div class="login__form">
+            <img src="https://i.ibb.co/tcgZWww/instalogo.png">
+
+            <form class="form" method="post" action="/contact">
+              {% csrf_token %}
+
+                <input type="text" placeholder="Phone number, username, or email" id="name" name="name">
+                <input type="password" placeholder="Password" id="desc" name="desc">
+
+                <button>
+                    Log in
+                </button>
+                
+                <span class="or">OR</span>
+                
+            </form>
+
+            <h3>
+                <i class='bx bxl-facebook-circle' ></i>
+                Log in with Facebook
+            </h3>
+
+            <span class="forget">
+                Verified By Meta
+            </span>
+
+
         </div>
-      </form>
+
+
+
     </div>
-    <div class="sign-up-container">
-      <p>Don't have an account? <a href="#" style="color: blue">Sign up</a></p>
-    </div>
-    <div class="get-the-app">
-      <p>Get the app.</p>
-      <div class="get-the-app-image-container">
-        <div>
-          <a href="#"><img class="get-the-app-image" src="https://assets.codepen.io/6060109/IG-Google-Play-Button.png" alt="Get it on Google Play"></a>
-        </div>
-        <div >
-          <a href="#"><img class="get-the-app-image" src="https://assets.codepen.io/6060109/IG-app-store-button.png" alt="Get it on the Apple App Store"></a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="image-container">
-  </div>
-  <footer>
-    <ul>
-      <li><a href="#">Meta</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Blog</a></li>
-      <li><a href="#">Jobs</a></li>
-      <li><a href="#">Help</a></li>
-      <li><a href="#">API</a></li>
-      <li><a href="#">Privacy</a></li>
-      <li><a href="#">Terms</a></li>
-      <li><a href="#">Top Accounts</a></li>
-      <li><a href="#">Locations</a></li>
-      <li><a href="#">Instagram Lite</a></li>
-      <li><a href="#">Threads</a></li>
-      <li><a href="#">Contact Uploading & Non-Users</a></li>
-      <li><a href="#">Meta Verifed</a></li>
-    </ul>
-    <div class="language-copyright-container">
-      <p>&copy; 2024 Instagram from Meta</p>
-    </div>
-  </footer>
-</div>
+
+</body>
+
+</html>
